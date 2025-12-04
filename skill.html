@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/skill.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500"><span>Dylphiiee</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link active" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skill.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="skills-container">
+        <div class="skills-content">
+            <div class="skills-header" data-aos="fade-down" data-aos-duration="1500">
+                <h1>Keahlianku 💻✨</h1>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                    <div class="skill-icon"><i class="fa fa-car"></i></div>
+                    <h2>Frontend Development</h2>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><h3>HTML</h3><span>80%</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><h3>CSS</h3><span>50%</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 50%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><h3>JavaScript</h3><span>85%</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h2>Backend Development</h2>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><h3>PHP</h3><span>65%</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 65%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><h3>Node.js</h3><span>70%</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><h3>Python</h3><span>65%</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 65%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/skill.js"></script>
+</body>
+</html>

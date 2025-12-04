@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500"><span>Dylphiiee</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skill.html">Skills</a></div>
+                <div class="link active" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-header" data-aos="fade-right" data-aos-duration="1500">
+                    <h1>Kontak aku 📩</h1>
+                    <p>silahkan hubungi Aku untuk pertanyaan, atau kolaborasi. Aku akan senang mendengarnya dari Kamu💕</p>
+                </div>
+                <div class="contact-details">
+                    <div class="contact-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+62 851-6648-7302</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>dylphiiee@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">
+                        <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Kebumen, Jawa Tengah, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="social-links">
+                <a href="https://github.com/Dylphiiee" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/dylphiiee" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/6285166487302" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            </div>
+
+<div class="contact-form" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+    <form onsubmit="sendEmail(event)">
+        <div class="form-group">
+            <input type="text" id="name" name="name" required>
+            <label for="name">Nama Kamu 📝</label>
+        </div>
+        <div class="form-group">
+            <input type="text" id="subject" name="subject" required>
+            <label for="subject">Tujuan Kamu 🎯</label>
+        </div>
+        <div class="form-group">
+            <textarea id="message" name="message" required></textarea>
+            <label for="message">Pesan Darimu 💌</label>
+        </div>
+        <button type="submit" class="submit-btn">Send Message ✉️</button>
+    </form>
+</div>
+
+<script>
+function sendEmail(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const subject = encodeURIComponent(document.getElementById("subject").value);
+    const message = encodeURIComponent(document.getElementById("message").value + "\n\nFrom: " + name);
+    window.location.href = `mailto:youremail@gmail.com?subject=${subject}&body=${message}`;
+}
+</script>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
